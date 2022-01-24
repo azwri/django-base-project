@@ -1,5 +1,16 @@
 {% extends "base/index.html" %}
+{% load static %}
+
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+{% endblock css %}
+
 
 {% block content %}
   <h1>Hello {{ name }}</h1>
 {% endblock content %}
+
+{% block js %}
+  <script src="{% static 'myapp/js/app.js' %}"></script>
+{% endblock js %}
